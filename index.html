@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Profile card component</title>
 </head>
+
 <body>
 
 
-  <main class="container">
+  <main class="container"></main>
+  <template id="template-card">
     <section class="wrapper">
-        <img src="images/bg-pattern-card.svg" alt="">
-        <div class="content">
-          <img src="images/image-victor.jpg" alt="">
-          <h2>Victor Crest <span>26</span></h2>
-          <p>london</p>
+      <img src="images/bg-pattern-card.svg" alt="">
+      <div class="content">
+        <img src="images/image-victor.jpg" alt="" class="card-img">
+        <h2>Victor Crest<span>26</span></h2>
+        <p>london</p>
+      </div>
+      <div class="content-footer">
+        <div>
+          <p class="stats attack">80k</p>
+          <p class="stats-text">Attack</p>
         </div>
-        <div class="content-footer">
-          <div>
-            <p class="stats">80k</p>
-            <p class="stats-text">followers</p>
-          </div>
-          <div>
-            <p class="stats">803k</p>
-            <p class="stats-text">likes</p>
-          </div>
-          <div>
-            <p class="stats">1.4k</p>
-            <p class="stats-text">photos</p>
-          </div>
+        <div>
+          <p class="stats special">803k</p>
+          <p class="stats-text">Special</p>
         </div>
+        <div>
+          <p class="stats defence">1.4k</p>
+          <p class="stats-text">Defence</p>
+        </div>
+      </div>
     </section>
+  </template>
 
-  </main>
-  
+
 
 
 
@@ -47,8 +51,11 @@
 
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.instagram.com/devsanzt/">devsanzt</a>.
   </footer>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
